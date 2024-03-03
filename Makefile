@@ -9,7 +9,7 @@ MANPREFIX = ${PREFIX}/share/man
 DOCPREFIX = ${PREFIX}/share/doc/${NAME}
 
 # use system flags.
-TABBED_CFLAGS = -I/usr/X11R6/include -I/usr/include/freetype2 -O3
+TABBED_CFLAGS = -I/usr/X11R6/include -I/usr/include/freetype2 $(CFLAGS)
 TABBED_LDFLAGS = -L/usr/X11R6/lib -lX11 -lfontconfig -lXft ${LDFLAGS}
 TABBED_CPPFLAGS = -DVERSION=\"${VERSION}\" -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700L
 
